@@ -69,11 +69,12 @@ sequenceDiagram
 
 ---
 
-## Complete Repository Catalog (11 Repositories)
+## Complete Repository Catalog (13 Repositories)
 
 | Repository | Port | Tech Stack | Domain Responsibility |
 |---|---|---|---|
 | [`fiverr-web`](https://github.com/fiverr-club/fiverr-web) | `3000` | Next.js 15, React 19, TypeScript, Tailwind CSS | Marketplace Catalog, 3-Tier Gig Configurator, Escrow Order Workspace, Seller Studio, Real-Time Inbox |
+| [`fiverr-technical-doc`](https://github.com/fiverr-club/fiverr-technical-doc) | `3001` | Next.js 15, Markdown, Mermaid, TypeScript | Interactive Technical Documentation Portal, DDD/Hexagonal Deep-Dive, 28-API Reference, Kafka Saga & DB Schemas |
 | [`fiverr-api-gateway`](https://github.com/fiverr-club/fiverr-api-gateway) | `8080` | Spring Cloud Gateway, Redis, JWT | Unified API Edge Routing, JWT Verification, Distributed Rate Limiting, CORS |
 | [`fiverr-auth-service`](https://github.com/fiverr-club/fiverr-auth-service) | `8081` | Java 21, Spring Boot 3, PostgreSQL | Identity Registration, Credentials, Access & Refresh Token Issuance, Role Management |
 | [`fiverr-user-service`](https://github.com/fiverr-club/fiverr-user-service) | `8082` | Java 21, Spring Boot 3, PostgreSQL | Freelancer & Buyer Profiles, Skills, Languages, Seller Level Evaluation (`New`, `Level 1`, `Level 2`, `Top Rated`) |
@@ -84,6 +85,7 @@ sequenceDiagram
 | [`fiverr-review-service`](https://github.com/fiverr-club/fiverr-review-service) | `8087` | Java 21, Spring Boot 3, PostgreSQL, Kafka | Verified Buyer Reviews, 3-Criteria Breakdown (`Communication`, `Service as Described`, `Recommend`) |
 | [`fiverr-notification-service`](https://github.com/fiverr-club/fiverr-notification-service) | `8088` | Java 21, Spring Boot 3, PostgreSQL, Kafka | Event-Driven Email, Push & In-App Alerts for Order, Escrow, and Messaging Events |
 | [`fiverr-k8s-infra`](https://github.com/fiverr-club/fiverr-k8s-infra) | — | Kubernetes, Kustomize, Helm v3, Docker Compose | StatefulSets (Postgres, Redis, Kafka KRaft), 10 Deployments + HPAs, NGINX Ingress TLS, NetworkPolicies |
+| [`.github`](https://github.com/fiverr-club/.github) | — | GitHub Organization Profile | Organization Architecture Overview & Repository Index |
 
 ---
 
