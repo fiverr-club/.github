@@ -9,6 +9,7 @@ Welcome to **Fiverr Club** (`@fiverr-club`), an enterprise-grade, cloud-native F
 ```mermaid
 flowchart TD
     Client["Next.js 15 Web App (fiverr-web :3000)"] --> Gateway["Spring Cloud API Gateway (fiverr-api-gateway :8080)"]
+    Desktop["Electron Desktop App (fiverr-app)"] --> Gateway
 
     Gateway --> Auth["Auth Service (:8081)"]
     Gateway --> User["User & Seller Level Service (:8082)"]
@@ -74,6 +75,7 @@ sequenceDiagram
 | Repository | Port / Production HTTPS | Tech Stack | Domain Responsibility |
 |---|---|---|---|
 | [`fiverr-web`](https://github.com/fiverr-club/fiverr-web) | `3000` · [https://fiverr-web-seven.vercel.app](https://fiverr-web-seven.vercel.app) | Next.js 15, React 19, TypeScript, Tailwind CSS | Marketplace Catalog, 3-Tier Gig Configurator, Escrow Order Workspace, Seller Studio, Real-Time Inbox |
+| [`fiverr-app`](https://github.com/fiverr-club/fiverr-app) | Desktop (`Electron`) | Electron 34, React 19, TypeScript, Vite, Tailwind CSS | Cross-Platform Desktop Workstation, Context-Isolated Preload IPC, Native Escrow Receipt Export, Live DDD Cluster Telemetry |
 | [`fiverr-technical-doc`](https://github.com/fiverr-club/fiverr-technical-doc) | `3001` · [https://fiverr-technical-doc.vercel.app](https://fiverr-technical-doc.vercel.app) | Next.js 15, Markdown, Mermaid, TypeScript | Interactive Technical Documentation Portal, DDD/Hexagonal Deep-Dive, 28-API Reference, Kafka Saga & DB Schemas |
 | [`fiverr-api-gateway`](https://github.com/fiverr-club/fiverr-api-gateway) | `8080` | Spring Cloud Gateway, Redis, JWT | Unified API Edge Routing, JWT Verification, Distributed Rate Limiting, CORS |
 | [`fiverr-auth-service`](https://github.com/fiverr-club/fiverr-auth-service) | `8081` | Java 21, Spring Boot 3, PostgreSQL | Identity Registration, Credentials, Access & Refresh Token Issuance, Role Management |
